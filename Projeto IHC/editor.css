@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100% ;
+    border: 1px  ;
+    margin-left: 20px;
+    
+}
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1008px;
+    width: 90px;
+    background-color: #3b284d;
+    padding-left: px;
+    padding-right: 23px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .main-content{
+    left: 250px;
+    width: calc(100%-250px);
+    font-family: Arial, sans-serif;
+}
+
+.sidebar.active{
+    width: 250px;
+    padding-right: 0px;
+}
+
+.sidebar #btn{
+    position: absolute;
+    color: #fff;
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.sidebar.active #btn {
+    left: 90%;
+}
+
+.sidebar .top .logo{
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.sidebar.active .top .logo{
+    opacity: 1;
+}
+
+.top .logo i{
+    font-size: 2rem;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    margin-top: 50px;
+}
+
+
+.user p {
+    color: #fff;
+    opacity: 1;
+    margin-left: 1rem;
+}
+
+
+.bold {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.sidebar p {
+    opacity: 0;
+    
+}
+
+.sidebar.active p{
+    opacity: 1;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 60px;
+    width: 90%;
+    margin: 4rem 8px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+
+.sidebar ul li a {
+    color: #fff;
+    display: flex;
+    margin-right: 0;
+    text-decoration: none;
+    border-radius: 20px;
+    padding-right: 0px;
+
+}
+
+.sidebar ul li a:hover{
+    background-color: #fff;
+    color: #0d0325;
+    align-items: center;
+    
+    
+}
+
+
+.sidebar ul li a i{
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    
+
+}
+
+
+.sidebar .nav-item {
+    opacity: 0;
+
+}
+
+.sidebar.active .nav-item {
+    opacity: 1;
+}
+
+.main-content{
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 80px);
+    padding: 1rem;
+    background-size: 100%;
+    background-image: url('Imgs/bg_bggenerator_com.jpg');
+}
+
+
+
+.top-bar {
+    position: flex;
+    top: 15px;
+    width: 100%;
+    
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    
+}
+
+.main-content .search-bar {
+    width: 600px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.main-content .content {
+    margin-top: 60px; /* Espaço para a barra fixa */
+    padding: 20px;
+}
+
+h1 {
+    color: white; /* Muda a cor para branco */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    font-size: 100px;
+    font-family: 'Press Start 2P', sans-serif; /* Aplica a fonte Press Start 2P como a fonte padrão */;
+    margin-top: 50px;
+}
+
+
+
+.zoom{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 1000px;
+    border-color: #fff solid 3px;
+}
+
+.zoom img{
+    object-fit: cover;
+    transition: transform 0.8s;
+    height: 100%;
+}
+
+.zoom:hover img{
+    transform: scale(1.5);
+    
+}
+
+
+.meiuca{
+    background-color: #00000052;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 100px;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: 90px;
+    ;
+    
+}
+
+.meiuca input{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.meiuca button{
+    background-color: #672c9e;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.meiuca button:hover{
+    background-color: #850af8;
+    cursor: pointer;
+}

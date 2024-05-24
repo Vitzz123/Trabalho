@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração</title>
+    <link rel="stylesheet" href="configuracao.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <i class="bx bxs-invader"></i>
+            <span>DevStop</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <div class="user">
+        <a href="editor.html">
+            <img src="Imgs/CIz_BqGv_200x200.jpg" alt="me" class="user-img">
+            <div>
+                <a href="editor.html">
+                    <p class="bold">DarkMaster123</p>
+                    <p>Admnistrador</p>
+                </a>
+        </a>
+        </div>
+    </div>
+    <ul>
+        
+        <li>
+            <a href="index.html">
+                <i class="bx bx-home"></i>
+                <span class="nav-item">Home</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="catalogo.html">
+                <i class="bx bxs-grid"></i>
+                <span class="nav-item">Biblioteca</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="configuracao.html">
+                <i class="bx bxs-cog"></i>
+                <span class="nav-item">Configurações</span>
+            </a>
+           
+        </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <li>
+            <a href="login.html">
+                <i class='bx bx-log-out'></i>
+                <span class="nav-item">log-out</span>
+            </a>
+        
+        </li>
+    </ul>
+    
+</div>
+
+</body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+</script>
+
+<div class="main-content">
+    <div class="aside">
+        <div class="header">
+            <h2>Amigos</h2>
+        </div>
+        <div class="perfil">
+            <img src="Imgs/CIz_BqGv_200x200.jpg" alt="">
+            <a href="editor.html"><strong><p id="p1">DarkMaster123 <i class='bx bx-edit-alt' ></i></p></strong></a>
+        </div>
+        <div class="lista">
+            <img src="Imgs/facilidade.png" alt="">
+        </div>
+    </div>
+    <h1>Configurações</h1>
+
+    
+        <div class="tema">
+            
+            <center>
+                <h3>Tema</h3>
+            </center>
+    
+                <CENTER>
+                    <button><i class='bx bx-sun'></i> Tema claro</button>
+                    <br>
+                    <button><i class='bx bx-moon' ></i> Tema escuro</button>
+                </CENTER>
+    
+        </div>
+
+        <div class="notificacao">
+
+            <center>
+                <h3>Notificações <i id="i1" class='bx bx-bell' ></i></h3> 
+            </center>
+            <p>Quando o download for concluído</p> <input type="checkbox">
+            <p>Quando a lista de repeak for atualizada</p> <input type="checkbox">
+            <p>Quando receber mensagem</p> <input type="checkbox">
+            <p>Quando pessoas da lista de amigos ficarem online</p> <input type="checkbox">
+            <p>Quando pessoas da lista de amigos iniciar o mesmo jogo que você</p> <input type="checkbox">
+            <p>Quando vir novas promoções</p> <input type="checkbox">
+            <p>Quando tiver atualizações disponíveis</p> <input type="checkbox">
+            <p>Receber e-mails?</p> <input type="checkbox">
+        
+            
+        </div>
+
+        <center>
+            <h3>Desinstalar jogos <i class='bx bxs-trash' ></i></h3> 
+        </center>
+        <div class="gallery">
+            <img src="Imgs/cyberpunk.jfif" alt="Game 1">
+            <img src="Imgs/deathloop.jfif" alt="Game 2">
+            <img src="Imgs/godofwar.jpeg" alt="Game 3">
+            <img src="Imgs/halflife.jpg" alt="Game 4">
+        </div>
+</div>
+
+<style>
+    .aside{
+        height: 980px;
+        width: 500px;
+        background-color: rgb(255, 255, 255);
+        float:  right;
+        
+       }
+
+    .header h2{
+        display: flex;
+        justify-content: center;
+       
+        border: solid rgb(98, 3, 175) 5px;
+        padding: 10px;
+    }
+    .perfil{
+        
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        height: 200px;
+        width: 200px;
+        background-color: blueviolet;
+    }
+  
+    .lista{
+        background-color: chartreuse;
+        display: flex;
+        height:500px;
+        width: 500px;
+        margin-top: 178px;
+     
+    }
+    h1 {
+    color: white; /* Muda a cor para branco */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    font-size: 100px;
+    font-family: 'Press Start 2P', sans-serif; /* Aplica a fonte Press Start 2P como a fonte padrão */;
+    margin-top: 50px;
+}
+
+h2{
+    color: rgb(0, 0, 0); /* Muda a cor para branco */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    font-size: 30px;
+    font-family: 'Press Start 2P', sans-serif; /* Aplica a fonte Press Start 2P como a fonte padrão */;
+}
+
+
+.gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 169px;
+            margin-top: 100px;
+        }
+        .gallery img {
+            width: 20%;
+            height: auto;
+        }
+    
+</style>
+
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <i class="bx bxs-invader"></i>
+            <span>DevStop</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <div class="user">
+        <a href="editor.html"><img src="Imgs/CIz_BqGv_200x200.jpg" alt="me" class="user-img"></a>
+        <div>
+            <p class="bold">DarkMaster123</p>
+            <p>Admnistrador</p>
+        </div>
+    </div>
+    <ul>
+        
+        <li>
+            <a href="index.html">
+                <i class="bx bx-home"></i>
+                <span class="nav-item">Home</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="catalogo.html">
+                <i class="bx bxs-grid"></i>
+                <span class="nav-item">Biblioteca</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="configuracao.html">
+                <i class="bx bxs-cog"></i>
+                <span class="nav-item">Configurações</span>
+            </a>
+           
+        </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+
+        <li>
+            <a href="login.html">
+                <i class='bx bx-log-out'></i>
+                <span class="nav-item">log-out</span>
+            </a>
+        
+        </li>
+    </ul>
+    
+</div>
+
+</body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+</script>
+<style>
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 30px;
+    }
+    .gallery img {
+        width: calc(33.333% - 10px);
+        height: auto;
+    }
+</style>
+
+<style>
+ 
+    
+
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border: 10px solid #cccccc;
+        box-sizing: border-box;
+        /* Ajusta a altura da caixa principal para ocupar 90% da altura da tela */
+        position: relative;
+        width: 1300px;
+        margin-left: 60px;
+        margin-left: 250px;
+        margin-top: 100px;
+        
+    }
+
+    .search-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #07000f;
+        border-bottom: 2px solid #080000;
+        box-sizing: border-box;
+    }
+
+    .search-bar {
+        flex: 1;
+        padding: 10px;
+        border: 2px solid #333;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-right: 10px;
+        margin-top: 50px;
+    }
+
+    .banner {
+        width: 100px;
+        height: 50px;
+        background-color: #5800a5;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .rectangle {
+        width: calc(33.33% - 20px);
+        height: 100px;
+        background-color: #f2f2f2;
+        margin: 10px;
+    }
+  /* Estilos para os botões */
+  .button-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            z-index: 1; /* Para os botões ficarem sobre os retângulos */
+            margin-bottom: 50px;
+        }
+
+        .button {
+            padding: 5px 10px;
+            background-color: #1c0049;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+           
+        }
+
+       
+    </style>
+</head>
+<body>
+   
+</div>
+
+
+
+<div class="main-content">
+    <h1>Biblioteca</h1>
+    <div class="container">
+        <div class="button-container">
+            <button class="button previous">Anterior</button>
+            <button class="button next">Posterior</button>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar..." class="search-bar">
+            <div class="banner">Enter</div>
+        </div>
+        
+    <div class="gallery">
+        <img src="Imgs/sonic.jfif" alt="Game 1">
+        <img src="Imgs/thewitcher3.jfif" alt="Game 2">
+        <img src="Imgs/Reddead.jfif" alt="Game 3">
+        <img src="Imgs/minecraft.jpg" alt="Game 4">
+        <img src="Imgs/Ratchet.jfif" alt="Game 5">
+        <img src="Imgs/farcry.jfif" alt="Game 6">
+        <img src="Imgs/ittakes2.jfif" alt="Game 7">
+        <img src="Imgs/residendtvillage.jpg" alt="Game 8">
+        <img src="Imgs/deathloop.jfif" alt="Game 9">
+        <img src="Imgs/tlou.jpg" alt="Game 10">
+        <img src="Imgs/godofwar.jpeg" alt="Game 11">
+        <img src="Imgs/elden.jpg" alt="Game 12">
+    </div>
+    </div>
+</div>
+</body>
+</html>

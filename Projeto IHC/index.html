@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="sidebar">
+    <div class="top">
+        <div class="logo">
+            <i class="bx bxs-invader"></i>
+            <span>DevStop</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <div class="user">
+        <a href="editor.html"><img src="Imgs/CIz_BqGv_200x200.jpg" alt="me" class="user-img"></a>
+        <div>
+            <p class="bold">DarkMaster123</p>
+            <p>Admnistrador</p>
+        </div>
+    </div>
+    <ul>
+        
+        <li>
+            <a href="index.html">
+                <i class="bx bx-home"></i>
+                <span class="nav-item">Home</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="catalogo.html">
+                <i class="bx bxs-grid"></i>
+                <span class="nav-item">Biblioteca</span>
+            </a>
+            
+        </li>
+        <li>
+            <a href="configuracao.html">
+                <i class="bx bxs-cog"></i>
+                <span class="nav-item">Configurações</span>
+            </a>
+           
+        </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+        <br>
+        <br>
+
+        
+        <li>
+            <a href="login.html">
+                <i class='bx bx-log-out'></i>
+                <span class="nav-item">log-out</span>
+            </a>
+        
+        </li>
+    </ul>
+    
+</div>
+
+
+
+<div class="main-content">
+    <div class="top-bar">
+        <input type="text" placeholder="Pesquisar..." class="search-bar">
+    </div>
+    
+    <h1>Destaques</h1>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="Imgs/Persona.jpeg" style="width:80%px" class="slide-img img1">
+        </div>
+        <div class="mySlides fade">
+            <img src="Imgs/hades.jfif" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="Imgs/assasins.jfif" style="width:100%" class="slide-img img3">
+        </div>
+    </div>
+        
+    <h2>Promoções</h2>
+
+
+    <div class="square-container">
+        <div class="row">
+            <div class="square"><img src="Imgs/skyrim.jpg" alt="Imagem 1"></div>
+            <div class="square"><img src="Imgs/amongus.jpg" alt="Imagem 2"></div>
+            <div class="square"><img src="Imgs/cyberpunk.jfif" alt="Imagem 3"></div>
+            <div class="square"><img src="Imgs/cybershadow.jfif" alt="Imagem 4"></div>
+        </div>
+        <div class="row">
+            <div class="square"><img src="Imgs/Doom-Eternal-1.jpg" alt="Imagem 5"></div>
+            <div class="square"><img src="Imgs/finalfantasy.png" alt="Imagem 6"></div>
+            <div class="square"><img src="Imgs/ghost.jfif" alt="Imagem 7"></div>
+            <div class="square"><img src="Imgs/halflife.jpg" alt="Imagem 8"></div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active');
+    };
+
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 8000); // Muda a imagem a cada 4 segundos
+}
+
+</script>
+
+
+
+
+
+</html>
